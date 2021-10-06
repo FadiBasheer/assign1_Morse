@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="assign1"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\docs\;CMake Files\cmake-build-debug\;CMake Files\src\;CMake Files\tests\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/fadi/work/assignments/assign1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/fadi/work/assignments/assign1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/fadi/work/assignments/assign1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Nightly">
+				<Option working_dir="/home/fadi/work/assignments/assign1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/Makefile&quot;  VERBOSE=1 Nightly"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Continuous">
+				<Option working_dir="/home/fadi/work/assignments/assign1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/Makefile&quot;  VERBOSE=1 Continuous"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test">
+				<Option working_dir="/home/fadi/work/assignments/assign1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Experimental">
+				<Option working_dir="/home/fadi/work/assignments/assign1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/Makefile&quot;  VERBOSE=1 Experimental"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="docs">
+				<Option working_dir="/home/fadi/work/assignments/assign1/cmake-build-debug/docs"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/docs/Makefile&quot;  VERBOSE=1 docs"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/docs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/docs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/docs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ascii_to_morse">
+				<Option output="/home/fadi/work/assignments/assign1/cmake-build-debug/src/ascii_to_morse" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/fadi/work/assignments/assign1/cmake-build-debug/src"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_POSIX_C_SOURCE=200809L"/>
+					<Add option="-D_XOPEN_SOURCE=700"/>
+					<Add directory="/home/fadi/work/assignments/assign1/src/../include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 ascii_to_morse"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ascii_to_morse/fast">
+				<Option output="/home/fadi/work/assignments/assign1/cmake-build-debug/src/ascii_to_morse" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/fadi/work/assignments/assign1/cmake-build-debug/src"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_POSIX_C_SOURCE=200809L"/>
+					<Add option="-D_XOPEN_SOURCE=700"/>
+					<Add directory="/home/fadi/work/assignments/assign1/src/../include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 ascii_to_morse/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="morse_to_ascii">
+				<Option output="/home/fadi/work/assignments/assign1/cmake-build-debug/src/morse_to_ascii" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/fadi/work/assignments/assign1/cmake-build-debug/src"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_POSIX_C_SOURCE=200809L"/>
+					<Add option="-D_XOPEN_SOURCE=700"/>
+					<Add directory="/home/fadi/work/assignments/assign1/src/../include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 morse_to_ascii"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="morse_to_ascii/fast">
+				<Option output="/home/fadi/work/assignments/assign1/cmake-build-debug/src/morse_to_ascii" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/fadi/work/assignments/assign1/cmake-build-debug/src"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_POSIX_C_SOURCE=200809L"/>
+					<Add option="-D_XOPEN_SOURCE=700"/>
+					<Add directory="/home/fadi/work/assignments/assign1/src/../include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 morse_to_ascii/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="format">
+				<Option working_dir="/home/fadi/work/assignments/assign1/cmake-build-debug/src"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 format"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="template_test">
+				<Option output="/home/fadi/work/assignments/assign1/cmake-build-debug/tests/template_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/fadi/work/assignments/assign1/cmake-build-debug/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_POSIX_C_SOURCE=200809L"/>
+					<Add option="-D_XOPEN_SOURCE=700"/>
+					<Add directory="/home/fadi/work/assignments/assign1/cmake-build-debug"/>
+					<Add directory="/home/fadi/work/assignments/assign1/tests/../include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 template_test"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="template_test/fast">
+				<Option output="/home/fadi/work/assignments/assign1/cmake-build-debug/tests/template_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/fadi/work/assignments/assign1/cmake-build-debug/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_POSIX_C_SOURCE=200809L"/>
+					<Add option="-D_XOPEN_SOURCE=700"/>
+					<Add directory="/home/fadi/work/assignments/assign1/cmake-build-debug"/>
+					<Add directory="/home/fadi/work/assignments/assign1/tests/../include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 template_test/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/fadi/work/assignments/assign1/docs/mainpage.md">
+			<Option target="docs"/>
+		</Unit>
+		<Unit filename="/home/fadi/work/assignments/assign1/include/common.h">
+			<Option target="ascii_to_morse"/>
+			<Option target="morse_to_ascii"/>
+			<Option target="template_test"/>
+		</Unit>
+		<Unit filename="/home/fadi/work/assignments/assign1/src/common.c">
+			<Option target="ascii_to_morse"/>
+			<Option target="morse_to_ascii"/>
+			<Option target="template_test"/>
+		</Unit>
+		<Unit filename="/home/fadi/work/assignments/assign1/src/main_to_ascii.c">
+			<Option target="morse_to_ascii"/>
+		</Unit>
+		<Unit filename="/home/fadi/work/assignments/assign1/src/main_to_morse.c">
+			<Option target="ascii_to_morse"/>
+		</Unit>
+		<Unit filename="/home/fadi/work/assignments/assign1/tests/main.c">
+			<Option target="template_test"/>
+		</Unit>
+		<Unit filename="/home/fadi/work/assignments/assign1/tests/tests.h">
+			<Option target="template_test"/>
+		</Unit>
+		<Unit filename="/home/fadi/work/assignments/assign1/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/fadi/work/assignments/assign1/docs/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\docs\"/>
+		</Unit>
+		<Unit filename="/home/fadi/work/assignments/assign1/cmake-build-debug/CMakeDoxyfile.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\"/>
+		</Unit>
+		<Unit filename="/home/fadi/work/assignments/assign1/cmake-build-debug/CMakeDoxygenDefaults.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\"/>
+		</Unit>
+		<Unit filename="/home/fadi/work/assignments/assign1/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\"/>
+		</Unit>
+		<Unit filename="/home/fadi/work/assignments/assign1/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\tests\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

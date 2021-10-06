@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/common.h
+
+/home/fadi/work/assignments/assign1/src/common.c
+common.h
+/home/fadi/work/assignments/assign1/src/common.h
+stdio.h
+-
+
+/home/fadi/work/assignments/assign1/tests/main.c
+tests.h
+/home/fadi/work/assignments/assign1/tests/tests.h
+
+/home/fadi/work/assignments/assign1/tests/tests.h
+cgreen/cgreen.h
+-
+

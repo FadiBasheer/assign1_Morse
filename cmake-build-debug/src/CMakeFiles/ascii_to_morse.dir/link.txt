@@ -1,0 +1,1 @@
+/usr/bin/gcc -g CMakeFiles/ascii_to_morse.dir/common.c.o CMakeFiles/ascii_to_morse.dir/main_to_morse.c.o -o ascii_to_morse   -L/usr/local/lib  -Wl,-rpath,/usr/local/lib -lm /usr/local/lib/libdc_error.so /usr/local/lib/libdc_posix.so 
