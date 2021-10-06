@@ -52,6 +52,10 @@ void addingHam(int location, int *a, int *binary, int size) {
 }
 
 int main(void) {
+
+    printf("num: %d\n", 'A');
+
+
     struct dc_error err;
     struct dc_posix_env env;
     char chars[BUF_SIZE];

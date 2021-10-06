@@ -18,9 +18,9 @@
 #include "common.h"
 #include <stdlib.h>
 
-int main(void)
-{
+int main(void) {
     display("Hello, World!");
 
+    char *strs[2];
     return EXIT_SUCCESS;
 }
