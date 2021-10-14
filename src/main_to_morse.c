@@ -17,10 +17,23 @@
 
 #include "common.h"
 #include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
 
 int main(void) {
     display("Hello, World!");
+    const char *strs[36] = {"-----", ".----", "..---", "...--", "....-", ".....", "-....", "--...", "---..", "----.",
+                            ".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--",
+                            "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--",
+                            "--.."};
 
-    char *strs[2];
+    printf("num: %s\n", strs[38 - 27]);
+    size_t len = strlen(strs[38 - 27]);
+    printf("%d\n", len);
+//    for (int i = 0; i < len; i++) {
+//        printf("%c", source[i]);
+//    }
+    printf("num: %s\n", strs[35]);
+
     return EXIT_SUCCESS;
 }
