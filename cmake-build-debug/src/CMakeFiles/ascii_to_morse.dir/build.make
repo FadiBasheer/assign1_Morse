@@ -106,6 +106,10 @@ src/ascii_to_morse: src/CMakeFiles/ascii_to_morse.dir/build.make
 src/ascii_to_morse: /usr/lib/x86_64-linux-gnu/libm.so
 src/ascii_to_morse: /usr/local/lib/libdc_error.so
 src/ascii_to_morse: /usr/local/lib/libdc_posix.so
+src/ascii_to_morse: /usr/local/lib/libdc_util.so
+src/ascii_to_morse: /usr/local/lib/libdc_fsm.so
+src/ascii_to_morse: /usr/local/lib/libdc_application.so
+src/ascii_to_morse: /usr/local/lib/libconfig.so
 src/ascii_to_morse: src/CMakeFiles/ascii_to_morse.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/fadi/work/assignments/assign1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable ascii_to_morse"
 	cd /home/fadi/work/assignments/assign1/cmake-build-debug/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ascii_to_morse.dir/link.txt --verbose=$(VERBOSE)

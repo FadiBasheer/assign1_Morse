@@ -236,13 +236,28 @@ GITCOMMAND:FILEPATH=/usr/bin/git
 LIBCGREEN:FILEPATH=/usr/local/lib/libcgreen.so
 
 //Path to a library.
+LIBCONFIG:FILEPATH=/usr/local/lib/libconfig.so
+
+//Path to a library.
+LIBDC_APPLICATION:FILEPATH=/usr/local/lib/libdc_application.so
+
+//Path to a library.
 LIBDC_ERROR:FILEPATH=/usr/local/lib/libdc_error.so
+
+//Path to a library.
+LIBDC_FSM:FILEPATH=/usr/local/lib/libdc_fsm.so
 
 //Path to a library.
 LIBDC_POSIX:FILEPATH=/usr/local/lib/libdc_posix.so
 
 //Path to a library.
+LIBDC_UTIL:FILEPATH=/usr/local/lib/libdc_util.so
+
+//Path to a library.
 LIBM:FILEPATH=/usr/lib/x86_64-linux-gnu/libm.so
+
+//Path to a library.
+LIBSOCKET:FILEPATH=LIBSOCKET-NOTFOUND
 
 //Path to a program.
 LINT:FILEPATH=/usr/bin/clang-tidy

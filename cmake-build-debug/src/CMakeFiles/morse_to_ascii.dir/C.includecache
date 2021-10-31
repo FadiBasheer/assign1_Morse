@@ -15,15 +15,11 @@ stdio.h
 -
 
 /home/fadi/work/assignments/assign1/src/main_to_ascii.c
-dc_posix/dc_unistd.h
--
 common.h
 /home/fadi/work/assignments/assign1/src/common.h
 stdlib.h
 -
 stdio.h
--
-stdlib.h
 -
 unistd.h
 -
@@ -32,6 +28,10 @@ string.h
 ctype.h
 -
 math.h
+-
+dc_posix/dc_fcntl.h
+-
+dc_posix/dc_unistd.h
 -
 bits/stdint-uintn.h
 -
