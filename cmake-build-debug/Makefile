@@ -504,30 +504,30 @@ docs/fast:
 .PHONY : docs/fast
 
 #=============================================================================
-# Target rules for targets named ascii_to_morse
+# Target rules for targets named morse2ascii
 
 # Build rule for target.
-ascii_to_morse: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ascii_to_morse
-.PHONY : ascii_to_morse
+morse2ascii: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 morse2ascii
+.PHONY : morse2ascii
 
 # fast build rule for target.
-ascii_to_morse/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/ascii_to_morse.dir/build.make src/CMakeFiles/ascii_to_morse.dir/build
-.PHONY : ascii_to_morse/fast
+morse2ascii/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/morse2ascii.dir/build.make src/CMakeFiles/morse2ascii.dir/build
+.PHONY : morse2ascii/fast
 
 #=============================================================================
-# Target rules for targets named morse_to_ascii
+# Target rules for targets named ascii2morse
 
 # Build rule for target.
-morse_to_ascii: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 morse_to_ascii
-.PHONY : morse_to_ascii
+ascii2morse: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ascii2morse
+.PHONY : ascii2morse
 
 # fast build rule for target.
-morse_to_ascii/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/morse_to_ascii.dir/build.make src/CMakeFiles/morse_to_ascii.dir/build
-.PHONY : morse_to_ascii/fast
+ascii2morse/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/ascii2morse.dir/build.make src/CMakeFiles/ascii2morse.dir/build
+.PHONY : ascii2morse/fast
 
 #=============================================================================
 # Target rules for targets named format
@@ -594,8 +594,8 @@ help:
 	@echo "... NightlyUpdate"
 	@echo "... docs"
 	@echo "... format"
-	@echo "... ascii_to_morse"
-	@echo "... morse_to_ascii"
+	@echo "... ascii2morse"
+	@echo "... morse2ascii"
 	@echo "... template_test"
 .PHONY : help
 

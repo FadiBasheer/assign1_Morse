@@ -1,24 +1,19 @@
+
+#include <ctype.h>
+#include <stdlib.h>
+#include <string.h>
 #include <dc_application/command_line.h>
 #include <dc_application/config.h>
-#include <dc_application/defaults.h>
-#include <dc_application/environment.h>
 #include <dc_application/options.h>
-#include <dc_posix/dc_stdlib.h>
 #include <dc_posix/dc_string.h>
-#include <getopt.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include "common.h"
-#include <string.h>
 #include <dc_posix/dc_unistd.h>
+#include <dc_util/dump.h>
+#include <dc_util/streams.h>
+#include <getopt.h>
 #include <unistd.h>
-#include <dc_posix/dc_fcntl.h>
-#include <bits/stdint-uintn.h>
-#include <ctype.h>
-#include <err.h>
 
 #define BUF_SIZE 1024
-#define SIZE 53
+#define SIZE 54
 
 struct application_settings {
     struct dc_opt_settings opts;
@@ -26,7 +21,7 @@ struct application_settings {
 };
 
 
-void write_to_file(const struct dc_posix_env *env, struct dc_error *err, int morse_file, int *loop, uint8_t *byte);
+void write_to_STDOUT(const struct dc_posix_env *env, struct dc_error *err, int *loop, uint8_t *byte);
 
 static struct dc_application_settings *create_settings(const struct dc_posix_env *env, struct dc_error *err);
 
@@ -38,26 +33,29 @@ static int run(const struct dc_posix_env *env, struct dc_error *err, struct dc_a
 
 static void error_reporter(const struct dc_error *err);
 
-static void trace_reporter(const struct dc_posix_env *env,
-                           const char *file_name,
-                           const char *function_name,
-                           size_t line_number);
-
-
 struct DataItem {
     const char *data;
     char key;
 };
 
 struct DataItem *hashArray[SIZE];
-//struct DataItem *dummyItem;
 struct DataItem *item;
 
-int hashCode(char key) {
+/**
+ * Generating the hashcode
+ * @param key
+ * @return
+ */
+static int hashCode(char key) {
     return key % SIZE;
 }
 
-struct DataItem *search(char key) {
+/**
+ * search in the HashMap
+ * @param key
+ * @return
+ */
+static struct DataItem *search(char key) {
     //get the hash
     int hashIndex = hashCode(key);
 
@@ -76,9 +74,13 @@ struct DataItem *search(char key) {
     return NULL;
 }
 
-void insert(char key, const char *data) {
-
-    struct DataItem *item = (struct DataItem *) malloc(sizeof(struct DataItem));
+/**
+ * Insert to the HashMap
+ * @param key
+ * @param data
+ */
+static void insert(char key, const char *data) {
+    item = (struct DataItem *) malloc(sizeof(struct DataItem));
     item->data = data;
     item->key = key;
 
@@ -96,6 +98,7 @@ void insert(char key, const char *data) {
     hashArray[hashIndex] = item;
 }
 
+
 int main(int argc, char *argv[]) {
     dc_posix_tracer tracer;
     dc_error_reporter reporter;
@@ -105,7 +108,6 @@ int main(int argc, char *argv[]) {
     int ret_val;
 
     reporter = error_reporter;
-    tracer = trace_reporter;
     tracer = NULL;
     dc_error_init(&err, reporter);
     dc_posix_env_init(&env, tracer);
@@ -184,16 +186,12 @@ static int destroy_settings(const struct dc_posix_env *env,
 
 static int run(const struct dc_posix_env *env, struct dc_error *err, struct dc_application_settings *settings) {
     struct application_settings *app_settings;
-    const char *message;
     DC_TRACE(env);
     app_settings = (struct application_settings *) settings;
-    message = dc_setting_string_get(env, app_settings->message);
-    printf("prog1 says \"%s\"\n", message);
 
     char chars[BUF_SIZE];
     ssize_t nread;
     int ret_val = 0;
-
     insert('A', ".-");
     insert('B', "-...");
     insert('C', "-.-.");
@@ -230,6 +228,7 @@ static int run(const struct dc_posix_env *env, struct dc_error *err, struct dc_a
     insert('7', "--...");
     insert('8', "---..");
     insert('9', "----.");
+    insert('%', "------..-.-----");
     insert('&', ".-...");
     insert('\'', ".----.");
     insert('@', ".--.-.");
@@ -248,67 +247,59 @@ static int run(const struct dc_posix_env *env, struct dc_error *err, struct dc_a
     insert('\n', ".-.-");
 
     nread = (dc_read(env, err, STDIN_FILENO, chars, BUF_SIZE)) - 1;
-    printf("str_len: %zu\n", nread);
 
-    int morse_file = dc_open(env, err, "./program0.hamming", DC_O_CREAT | DC_O_WRONLY, S_IRUSR | S_IWUSR);
-    if (dc_error_has_error(err)) {
-        ret_val = 1;
-        printf("ret_val %d", ret_val);
-    }
     uint8_t byte = 0;
 
     int loop = 0;
     for (ssize_t i = 0; i < nread; i++) {
-        uint8_t c = (uint8_t) toupper(chars[i]);
 
         const char *st;
         item = search((char) toupper(chars[i]));
 
         if (item != NULL) {
-            printf("Element found: %s\n", item->data);
             st = item->data;
         } else if (chars[i] == ' ') {
             st = " ";
         } else {
-            printf("Element not found\n");
+            st = "........";
         }
 
+        int eoc_flag = 0;
         for (ssize_t l = 0; l < ((ssize_t) strlen(st)); l++) {
             if (st[l] == '-') {
+                eoc_flag = 1;
                 byte = (uint8_t) (byte << 2);
                 byte = byte | 0x01;
-                write_to_file(env, err, morse_file, &loop, &byte);
+                write_to_STDOUT(env, err, &loop, &byte);
 
             } else if (st[l] == '.') {
+                eoc_flag = 1;
                 byte = (uint8_t) (byte << 2);
                 byte = byte | 0x02;
-                write_to_file(env, err, morse_file, &loop, &byte);
+                write_to_STDOUT(env, err, &loop, &byte);
 
             } else {
                 byte = (uint8_t) (byte << 2);
                 byte = byte | 0x03;
-                write_to_file(env, err, morse_file, &loop, &byte);
+                write_to_STDOUT(env, err, &loop, &byte);
             }
         }
-        byte = (uint8_t) (byte << 2);
-        byte = byte | 0x00;
-        write_to_file(env, err, morse_file, &loop, &byte);
+        if (eoc_flag) {
+            byte = (uint8_t) (byte << 2);
+            byte = byte | 0x00;
+            write_to_STDOUT(env, err, &loop, &byte);
+        }
     }
     byte = (uint8_t) (byte << 2);
     byte = byte | 0x00;
-    write_to_file(env, err, morse_file, &loop, &byte);
+    write_to_STDOUT(env, err, &loop, &byte);
     byte = (uint8_t) (byte << 2);
     byte = byte | 0x00;
-    write_to_file(env, err, morse_file, &loop, &byte);
+    write_to_STDOUT(env, err, &loop, &byte);
 
     if (loop != 0) {
-        dc_write(env, err, morse_file, &byte, 1);
-        if (dc_error_has_error(err)) {
-            ret_val = 9;
-            printf("ret_val %d", ret_val);
-        }
+        printf("%c", byte);
     };
-    printf("byte final: %d\n", byte);
 
     error_reporter(err);
 
@@ -320,23 +311,19 @@ static void error_reporter(const struct dc_error *err) {
     fprintf(stderr, "ERROR: %s\n", err->message);
 }
 
-static void trace_reporter(__attribute__((unused)) const struct dc_posix_env *env,
-                           const char *file_name,
-                           const char *function_name,
-                           size_t line_number) {
-    fprintf(stdout, "TRACE: %s : %s : @ %zu\n", file_name, function_name, line_number);
-}
-
-
-void write_to_file(const struct dc_posix_env *env, struct dc_error *err, int morse_file, int *loop, uint8_t *byte) {
+/**
+ * Write to STDOUT
+ * @param env
+ * @param err
+ * @param loop
+ * @param byte
+ */
+void write_to_STDOUT(const struct dc_posix_env *env, struct dc_error *err, int *loop, uint8_t *byte) {
     (*loop) += 2;
-//    printf("loop: %d\n", *loop);
-//    printf("byte: %d\n", *byte);
     if (dc_error_has_error(err)) {
-        printf("ret_val %d\n", 99);
     }
     if (*loop == 8) {
-        dc_write(env, err, morse_file, byte, 1);
+        printf("%c", *byte);
         *byte = 0;
         (*loop) = 0;
     }

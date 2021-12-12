@@ -127,32 +127,32 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/CMakeFiles/ascii_to_morse.dir/rule:
-	cd /home/fadi/work/assignments/assign1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/ascii_to_morse.dir/rule
-.PHONY : src/CMakeFiles/ascii_to_morse.dir/rule
+src/CMakeFiles/morse2ascii.dir/rule:
+	cd /home/fadi/work/assignments/assign1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/morse2ascii.dir/rule
+.PHONY : src/CMakeFiles/morse2ascii.dir/rule
 
 # Convenience name for target.
-ascii_to_morse: src/CMakeFiles/ascii_to_morse.dir/rule
-.PHONY : ascii_to_morse
+morse2ascii: src/CMakeFiles/morse2ascii.dir/rule
+.PHONY : morse2ascii
 
 # fast build rule for target.
-ascii_to_morse/fast:
-	cd /home/fadi/work/assignments/assign1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ascii_to_morse.dir/build.make src/CMakeFiles/ascii_to_morse.dir/build
-.PHONY : ascii_to_morse/fast
+morse2ascii/fast:
+	cd /home/fadi/work/assignments/assign1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/morse2ascii.dir/build.make src/CMakeFiles/morse2ascii.dir/build
+.PHONY : morse2ascii/fast
 
 # Convenience name for target.
-src/CMakeFiles/morse_to_ascii.dir/rule:
-	cd /home/fadi/work/assignments/assign1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/morse_to_ascii.dir/rule
-.PHONY : src/CMakeFiles/morse_to_ascii.dir/rule
+src/CMakeFiles/ascii2morse.dir/rule:
+	cd /home/fadi/work/assignments/assign1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/ascii2morse.dir/rule
+.PHONY : src/CMakeFiles/ascii2morse.dir/rule
 
 # Convenience name for target.
-morse_to_ascii: src/CMakeFiles/morse_to_ascii.dir/rule
-.PHONY : morse_to_ascii
+ascii2morse: src/CMakeFiles/ascii2morse.dir/rule
+.PHONY : ascii2morse
 
 # fast build rule for target.
-morse_to_ascii/fast:
-	cd /home/fadi/work/assignments/assign1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/morse_to_ascii.dir/build.make src/CMakeFiles/morse_to_ascii.dir/build
-.PHONY : morse_to_ascii/fast
+ascii2morse/fast:
+	cd /home/fadi/work/assignments/assign1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ascii2morse.dir/build.make src/CMakeFiles/ascii2morse.dir/build
+.PHONY : ascii2morse/fast
 
 # Convenience name for target.
 src/CMakeFiles/format.dir/rule:
@@ -173,8 +173,8 @@ common.o: common.c.o
 
 # target to build an object file
 common.c.o:
-	cd /home/fadi/work/assignments/assign1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ascii_to_morse.dir/build.make src/CMakeFiles/ascii_to_morse.dir/common.c.o
-	cd /home/fadi/work/assignments/assign1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/morse_to_ascii.dir/build.make src/CMakeFiles/morse_to_ascii.dir/common.c.o
+	cd /home/fadi/work/assignments/assign1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/morse2ascii.dir/build.make src/CMakeFiles/morse2ascii.dir/common.c.o
+	cd /home/fadi/work/assignments/assign1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ascii2morse.dir/build.make src/CMakeFiles/ascii2morse.dir/common.c.o
 .PHONY : common.c.o
 
 common.i: common.c.i
@@ -182,8 +182,8 @@ common.i: common.c.i
 
 # target to preprocess a source file
 common.c.i:
-	cd /home/fadi/work/assignments/assign1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ascii_to_morse.dir/build.make src/CMakeFiles/ascii_to_morse.dir/common.c.i
-	cd /home/fadi/work/assignments/assign1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/morse_to_ascii.dir/build.make src/CMakeFiles/morse_to_ascii.dir/common.c.i
+	cd /home/fadi/work/assignments/assign1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/morse2ascii.dir/build.make src/CMakeFiles/morse2ascii.dir/common.c.i
+	cd /home/fadi/work/assignments/assign1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ascii2morse.dir/build.make src/CMakeFiles/ascii2morse.dir/common.c.i
 .PHONY : common.c.i
 
 common.s: common.c.s
@@ -191,57 +191,57 @@ common.s: common.c.s
 
 # target to generate assembly for a file
 common.c.s:
-	cd /home/fadi/work/assignments/assign1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ascii_to_morse.dir/build.make src/CMakeFiles/ascii_to_morse.dir/common.c.s
-	cd /home/fadi/work/assignments/assign1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/morse_to_ascii.dir/build.make src/CMakeFiles/morse_to_ascii.dir/common.c.s
+	cd /home/fadi/work/assignments/assign1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/morse2ascii.dir/build.make src/CMakeFiles/morse2ascii.dir/common.c.s
+	cd /home/fadi/work/assignments/assign1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ascii2morse.dir/build.make src/CMakeFiles/ascii2morse.dir/common.c.s
 .PHONY : common.c.s
 
-main_to_ascii.o: main_to_ascii.c.o
-.PHONY : main_to_ascii.o
+main2ascii.o: main2ascii.c.o
+.PHONY : main2ascii.o
 
 # target to build an object file
-main_to_ascii.c.o:
-	cd /home/fadi/work/assignments/assign1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/morse_to_ascii.dir/build.make src/CMakeFiles/morse_to_ascii.dir/main_to_ascii.c.o
-.PHONY : main_to_ascii.c.o
+main2ascii.c.o:
+	cd /home/fadi/work/assignments/assign1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/morse2ascii.dir/build.make src/CMakeFiles/morse2ascii.dir/main2ascii.c.o
+.PHONY : main2ascii.c.o
 
-main_to_ascii.i: main_to_ascii.c.i
-.PHONY : main_to_ascii.i
+main2ascii.i: main2ascii.c.i
+.PHONY : main2ascii.i
 
 # target to preprocess a source file
-main_to_ascii.c.i:
-	cd /home/fadi/work/assignments/assign1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/morse_to_ascii.dir/build.make src/CMakeFiles/morse_to_ascii.dir/main_to_ascii.c.i
-.PHONY : main_to_ascii.c.i
+main2ascii.c.i:
+	cd /home/fadi/work/assignments/assign1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/morse2ascii.dir/build.make src/CMakeFiles/morse2ascii.dir/main2ascii.c.i
+.PHONY : main2ascii.c.i
 
-main_to_ascii.s: main_to_ascii.c.s
-.PHONY : main_to_ascii.s
+main2ascii.s: main2ascii.c.s
+.PHONY : main2ascii.s
 
 # target to generate assembly for a file
-main_to_ascii.c.s:
-	cd /home/fadi/work/assignments/assign1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/morse_to_ascii.dir/build.make src/CMakeFiles/morse_to_ascii.dir/main_to_ascii.c.s
-.PHONY : main_to_ascii.c.s
+main2ascii.c.s:
+	cd /home/fadi/work/assignments/assign1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/morse2ascii.dir/build.make src/CMakeFiles/morse2ascii.dir/main2ascii.c.s
+.PHONY : main2ascii.c.s
 
-main_to_morse.o: main_to_morse.c.o
-.PHONY : main_to_morse.o
+main2morse.o: main2morse.c.o
+.PHONY : main2morse.o
 
 # target to build an object file
-main_to_morse.c.o:
-	cd /home/fadi/work/assignments/assign1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ascii_to_morse.dir/build.make src/CMakeFiles/ascii_to_morse.dir/main_to_morse.c.o
-.PHONY : main_to_morse.c.o
+main2morse.c.o:
+	cd /home/fadi/work/assignments/assign1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ascii2morse.dir/build.make src/CMakeFiles/ascii2morse.dir/main2morse.c.o
+.PHONY : main2morse.c.o
 
-main_to_morse.i: main_to_morse.c.i
-.PHONY : main_to_morse.i
+main2morse.i: main2morse.c.i
+.PHONY : main2morse.i
 
 # target to preprocess a source file
-main_to_morse.c.i:
-	cd /home/fadi/work/assignments/assign1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ascii_to_morse.dir/build.make src/CMakeFiles/ascii_to_morse.dir/main_to_morse.c.i
-.PHONY : main_to_morse.c.i
+main2morse.c.i:
+	cd /home/fadi/work/assignments/assign1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ascii2morse.dir/build.make src/CMakeFiles/ascii2morse.dir/main2morse.c.i
+.PHONY : main2morse.c.i
 
-main_to_morse.s: main_to_morse.c.s
-.PHONY : main_to_morse.s
+main2morse.s: main2morse.c.s
+.PHONY : main2morse.s
 
 # target to generate assembly for a file
-main_to_morse.c.s:
-	cd /home/fadi/work/assignments/assign1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ascii_to_morse.dir/build.make src/CMakeFiles/ascii_to_morse.dir/main_to_morse.c.s
-.PHONY : main_to_morse.c.s
+main2morse.c.s:
+	cd /home/fadi/work/assignments/assign1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ascii2morse.dir/build.make src/CMakeFiles/ascii2morse.dir/main2morse.c.s
+.PHONY : main2morse.c.s
 
 # Help Target
 help:
@@ -253,17 +253,17 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... format"
-	@echo "... ascii_to_morse"
-	@echo "... morse_to_ascii"
+	@echo "... ascii2morse"
+	@echo "... morse2ascii"
 	@echo "... common.o"
 	@echo "... common.i"
 	@echo "... common.s"
-	@echo "... main_to_ascii.o"
-	@echo "... main_to_ascii.i"
-	@echo "... main_to_ascii.s"
-	@echo "... main_to_morse.o"
-	@echo "... main_to_morse.i"
-	@echo "... main_to_morse.s"
+	@echo "... main2ascii.o"
+	@echo "... main2ascii.i"
+	@echo "... main2ascii.s"
+	@echo "... main2morse.o"
+	@echo "... main2morse.i"
+	@echo "... main2morse.s"
 .PHONY : help
 
 

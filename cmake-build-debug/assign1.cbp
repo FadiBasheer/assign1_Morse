@@ -87,8 +87,8 @@
 					<DistClean command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/docs/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="ascii_to_morse">
-				<Option output="/home/fadi/work/assignments/assign1/cmake-build-debug/src/ascii_to_morse" prefix_auto="0" extension_auto="0"/>
+			<Target title="morse2ascii">
+				<Option output="/home/fadi/work/assignments/assign1/cmake-build-debug/src/morse2ascii" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/fadi/work/assignments/assign1/cmake-build-debug/src"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -99,14 +99,14 @@
 					<Add directory="/home/fadi/work/assignments/assign1/src/../include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 ascii_to_morse"/>
+					<Build command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 morse2ascii"/>
 					<CompileFile command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="ascii_to_morse/fast">
-				<Option output="/home/fadi/work/assignments/assign1/cmake-build-debug/src/ascii_to_morse" prefix_auto="0" extension_auto="0"/>
+			<Target title="morse2ascii/fast">
+				<Option output="/home/fadi/work/assignments/assign1/cmake-build-debug/src/morse2ascii" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/fadi/work/assignments/assign1/cmake-build-debug/src"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -117,14 +117,14 @@
 					<Add directory="/home/fadi/work/assignments/assign1/src/../include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 ascii_to_morse/fast"/>
+					<Build command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 morse2ascii/fast"/>
 					<CompileFile command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="morse_to_ascii">
-				<Option output="/home/fadi/work/assignments/assign1/cmake-build-debug/src/morse_to_ascii" prefix_auto="0" extension_auto="0"/>
+			<Target title="ascii2morse">
+				<Option output="/home/fadi/work/assignments/assign1/cmake-build-debug/src/ascii2morse" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/fadi/work/assignments/assign1/cmake-build-debug/src"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -135,14 +135,14 @@
 					<Add directory="/home/fadi/work/assignments/assign1/src/../include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 morse_to_ascii"/>
+					<Build command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 ascii2morse"/>
 					<CompileFile command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="morse_to_ascii/fast">
-				<Option output="/home/fadi/work/assignments/assign1/cmake-build-debug/src/morse_to_ascii" prefix_auto="0" extension_auto="0"/>
+			<Target title="ascii2morse/fast">
+				<Option output="/home/fadi/work/assignments/assign1/cmake-build-debug/src/ascii2morse" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/fadi/work/assignments/assign1/cmake-build-debug/src"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -153,7 +153,7 @@
 					<Add directory="/home/fadi/work/assignments/assign1/src/../include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 morse_to_ascii/fast"/>
+					<Build command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 ascii2morse/fast"/>
 					<CompileFile command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -f &quot;/home/fadi/work/assignments/assign1/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
@@ -212,20 +212,20 @@
 			<Option target="docs"/>
 		</Unit>
 		<Unit filename="/home/fadi/work/assignments/assign1/include/common.h">
-			<Option target="ascii_to_morse"/>
-			<Option target="morse_to_ascii"/>
+			<Option target="morse2ascii"/>
+			<Option target="ascii2morse"/>
 			<Option target="template_test"/>
 		</Unit>
 		<Unit filename="/home/fadi/work/assignments/assign1/src/common.c">
-			<Option target="ascii_to_morse"/>
-			<Option target="morse_to_ascii"/>
+			<Option target="morse2ascii"/>
+			<Option target="ascii2morse"/>
 			<Option target="template_test"/>
 		</Unit>
-		<Unit filename="/home/fadi/work/assignments/assign1/src/main_to_ascii.c">
-			<Option target="morse_to_ascii"/>
+		<Unit filename="/home/fadi/work/assignments/assign1/src/main2ascii.c">
+			<Option target="morse2ascii"/>
 		</Unit>
-		<Unit filename="/home/fadi/work/assignments/assign1/src/main_to_morse.c">
-			<Option target="ascii_to_morse"/>
+		<Unit filename="/home/fadi/work/assignments/assign1/src/main2morse.c">
+			<Option target="ascii2morse"/>
 		</Unit>
 		<Unit filename="/home/fadi/work/assignments/assign1/tests/main.c">
 			<Option target="template_test"/>

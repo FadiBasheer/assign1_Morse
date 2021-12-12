@@ -1,0 +1,30 @@
+-----------------------------------ascii to morse--------------------------------
+
+1-Generate the Hashmap which consist of Key (ascii) and value (morse)
+
+2- reading the input from STDIN
+
+3-converting each char to the equivalent of dots and dashes
+
+4-convert - to 01, . to 10, and space to 11
+
+5-adding 00 in the end of each char
+
+5- when the byte is full, write on the STDOUT
+	
+	
+	----------------------------------- morse to ascii --------------------------------
+
+1-Generate the Hashmap which consist of Key (ascii) and value (morse)
+
+2-reading the input from STDIN
+
+3-convert 01 to -, 10 to ., and 11 to space
+
+4-whn we hitt 00, the end of char. converting the string of dots and dashes to an equivalent char
+
+5-concat those chars together untill the end of reading 
+
+6-write on the STDOUT
+	
+	

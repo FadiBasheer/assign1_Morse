@@ -35,8 +35,8 @@
 /home/fadi/work/assignments/assign1/cmake-build-debug/docs/CMakeFiles/docs.dir
 /home/fadi/work/assignments/assign1/cmake-build-debug/src/CMakeFiles/rebuild_cache.dir
 /home/fadi/work/assignments/assign1/cmake-build-debug/src/CMakeFiles/edit_cache.dir
-/home/fadi/work/assignments/assign1/cmake-build-debug/src/CMakeFiles/ascii_to_morse.dir
-/home/fadi/work/assignments/assign1/cmake-build-debug/src/CMakeFiles/morse_to_ascii.dir
+/home/fadi/work/assignments/assign1/cmake-build-debug/src/CMakeFiles/morse2ascii.dir
+/home/fadi/work/assignments/assign1/cmake-build-debug/src/CMakeFiles/ascii2morse.dir
 /home/fadi/work/assignments/assign1/cmake-build-debug/src/CMakeFiles/format.dir
 /home/fadi/work/assignments/assign1/cmake-build-debug/src/CMakeFiles/test.dir
 /home/fadi/work/assignments/assign1/cmake-build-debug/tests/CMakeFiles/rebuild_cache.dir

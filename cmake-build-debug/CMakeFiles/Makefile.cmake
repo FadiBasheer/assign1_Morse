@@ -85,8 +85,8 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/ContinuousStart.dir/DependInfo.cmake"
   "CMakeFiles/ContinuousUpdate.dir/DependInfo.cmake"
   "docs/CMakeFiles/docs.dir/DependInfo.cmake"
-  "src/CMakeFiles/ascii_to_morse.dir/DependInfo.cmake"
-  "src/CMakeFiles/morse_to_ascii.dir/DependInfo.cmake"
+  "src/CMakeFiles/morse2ascii.dir/DependInfo.cmake"
+  "src/CMakeFiles/ascii2morse.dir/DependInfo.cmake"
   "src/CMakeFiles/format.dir/DependInfo.cmake"
   "tests/CMakeFiles/template_test.dir/DependInfo.cmake"
   )

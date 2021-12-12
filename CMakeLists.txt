@@ -17,11 +17,11 @@ set(SOURCE_LIST
         )
 
 set(TO_MORSE_MAIN_SOURCE
-        "${assign1_SOURCE_DIR}/src/main_to_morse.c"
+        "${assign1_SOURCE_DIR}/src/main2morse.c"
         )
 
 set(TO_ASCII_MAIN_SOURCE
-        "${assign1_SOURCE_DIR}/src/main_to_ascii.c"
+        "${assign1_SOURCE_DIR}/src/main2ascii.c"
         )
 
 

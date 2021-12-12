@@ -31,9 +31,22 @@ cmake --build cmake-build-debug --target docs
 cmake --build cmake-build-debug --target format
 
 
-./cmake-build-debug/src/morse_to_ascii 
-./cmake-build-debug/src/ascii_to_morse
+./cmake-build-debug/src/morse2ascii 
+./cmake-build-debug/src/ascii2morse
 
-echo "Hello" | ./cmake-build-debug/src/ascii_to_morse
+echo "Hello" | ./cmake-build-debug/src/ascii2morse |./cmake-build-debug/src/morse2ascii 
 
 ```
+echo "Hello" | ./cmake-build-debug/src/ascii2morse | dcdump
+
+xxd -b program2.hamming
+dcdump < program2.hamming
+
+
+
+
+
+
+
+
+	
