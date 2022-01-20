@@ -34,6 +34,8 @@ cmake --build cmake-build-debug --target format
 ./cmake-build-debug/src/morse2ascii 
 ./cmake-build-debug/src/ascii2morse
 
+
+--------------------How to run it-------------------------
 echo "Hello" | ./cmake-build-debug/src/ascii2morse |./cmake-build-debug/src/morse2ascii 
 
 ```

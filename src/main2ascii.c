@@ -267,8 +267,8 @@ static int run(const struct dc_posix_env *env, struct dc_error *err, struct dc_a
 
 
     if (dc_error_has_no_error(err)) {
-        char final_string[30];
-        memset(final_string, 0, 30);
+        char final_string[50];
+        memset(final_string, 0, 50);
 
         char space[] = " ";
 
@@ -276,6 +276,7 @@ static int run(const struct dc_posix_env *env, struct dc_error *err, struct dc_a
         char ch[15];
         memset(ch, 0, 15);
         nread = (dc_read(env, err, STDIN_FILENO, chars, BUF_SIZE)) - 1;
+
         if (dc_error_has_error(err)) {
             ret_val = 1;
         }
@@ -305,7 +306,7 @@ static int run(const struct dc_posix_env *env, struct dc_error *err, struct dc_a
                 }
             }
         }
-        printf("final_string: %s\n", final_string);
+        printf("\nfinal_string: %s\n\n", final_string);
     }
     error_reporter(err);
 
